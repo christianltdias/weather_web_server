@@ -3,25 +3,34 @@
 
 <head>
     <title>Weather</title>
-    <link rel = "icon" href = "/img/weather.png">
+    <link rel="icon" href="/img/weather.png">
     <link rel="stylesheet" href="/css/styles.css">
-    
+
 </head>
 
 <body>
+
     <div class="main-content">
         {{>header}}
+        <div class="home_div">
+            <p>Use this site to get your Weather!</p>
 
-        <p>Use this site to get your Weather!</p>
+            <form>
+                <input placeholder="Ex: Nova Friburgo">
+                <button>Search</button>
+            </form>
 
-        <form>
-            <input placeholder="Ex: Nova Friburgo">
-            <button>Search</button>
-        </form>
-    
-        <p id="message-1"></p>
-        <p id="message-2"></p>
-    
+        </div>
+
+        <div class="result">
+            <img class="icon" src="/img/search.png">
+            <div class="result-text">
+                <p id="message-1" class = "text"></p>
+                <p id="message-2" class = "text"></p>
+
+            </div>
+
+        </div>
     </div>
 
     {{>footer}}
